@@ -1,0 +1,17 @@
+Follow the rules:
+
+1. Insert your testing codeblock in "PowerConsumption.c" .There is a place in 'main()' function where you can insert your codeblock which you want to test. Then save it.
+
+2. After inserting codeblock in 'main()' function, open terminal in current folder and run the following command:
+
+		
+		1. $ sudo modprobe msr
+		2. $ g++ -o PowerConsumption PowerConsumption.c -lm
+		3. $ sudo ./PowerConsumption
+
+
+After running these commands successfully, you can see result in terminal.
+
+
+
+

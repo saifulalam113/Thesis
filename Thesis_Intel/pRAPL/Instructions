@@ -1,0 +1,29 @@
+-------------------------------> for first time use (begin) <----------------------------------------
+1. $ sudo modprobe msr
+
+2. $ gcc -c helper_library.c
+
+3. $ gcc -shared -o helper_library.so helper_library.o
+
+4. $ export LD_LIBRARY_PATH="path to currennt folder from root directory"
+
+5. python test.py
+
+-------------------------------> for first time use (end) <----------------------------------------
+
+
+
+
+
+-->By running above command, get msr_filename,num_pkg,cpu_model.Save these values into "test2.py" for next use.
+
+msr_filename : /dev/cpu/0/msr
+num_pkg : 1
+cpu_model : 69
+
+
+
+Now , write your testing codeblock between EnergyStatCheck() in "test2.py"
+and from terminal,execute the following command.......
+
+$ sudo python test2.py
